@@ -1,6 +1,8 @@
 //using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Monster : MonoBehaviour
 {
@@ -17,22 +19,19 @@ public class Monster : MonoBehaviour
     public void OnHit(float damage)
     {
         curHp -= damage;
-        if (curHp<=0) {
+
+        if (curHp <= 0)
+        {
             curHp = 0;
             isDead = true;
-    }
+        }
+
         Debug.Log("Slime Hit!, Current Hp: " + curHp);
 
-        if 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (isDead)
+        {
+            Debug.Log("Slime is Dead");
+            Destroy(gameObject, 1.5f);
+        }
     }
 }
