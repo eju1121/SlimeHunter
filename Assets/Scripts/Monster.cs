@@ -10,6 +10,7 @@ public class Monster : MonoBehaviour
     [SerializeField] private float maxHp;
     [SerializeField] private SlimeName slimeNameText;
     [SerializeField] private string slimeName;
+    
     private float curHp;
 
     private bool isDead = false;
