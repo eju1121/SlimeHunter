@@ -103,6 +103,7 @@ MonoBehaviour:
   maxHp: 100
   slimeNameText: {fileID: 5963834609224249574}
   slimeName: red slime
+  slimeHoldGold: 30
 --- !u!95 &971111885250961648
 Animator:
   serializedVersion: 5
