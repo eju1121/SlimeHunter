@@ -153,6 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slimes:
   - {fileID: 6113850888771636244, guid: daba4ad9c20390a4fa392b0ebd9437e8, type: 3}
+  - {fileID: 7565099226833410792, guid: e77c02d85fa2cc648b0e616d82d90736, type: 3}
+  - {fileID: 4008665924405960602, guid: 0ed4ff5c00203fc4dac1eeb5c0e6339a, type: 3}
   damage: 10
   percent: 50
   criticalDamage: 20
@@ -445,6 +447,7 @@ GameObject:
   - component: {fileID: 768831889}
   - component: {fileID: 768831891}
   - component: {fileID: 768831890}
+  - component: {fileID: 768831892}
   m_Layer: 5
   m_Name: Gold
   m_TagString: Untagged
@@ -514,6 +517,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768831888}
   m_CullTransparentMesh: 1
+--- !u!114 &768831892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768831888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e1ca2f28c380f40867c982f2eef292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curGold: 0
+  goldText: {fileID: 0}
 --- !u!1 &1005592521
 GameObject:
   m_ObjectHideFlags: 0
